@@ -1,5 +1,11 @@
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!--MY GAZEBO PLUGINS-->
+
+  <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
+
+  <!--MY GAZEBO PLUGINS-->
+
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
@@ -217,14 +223,14 @@
     <visual name='hokuyo_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <mesh filename=“package://home/robond/catkin_ws/src/my_robot/meshes/hokuyo.dae”/>
+        <mesh filename="package://my_robot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 
   </link>
 
   <joint type="fixed" name="hokuyo_joint">
-    <origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+    <origin xyz="0.15 0 0.08" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
