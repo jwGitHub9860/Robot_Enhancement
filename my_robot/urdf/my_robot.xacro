@@ -103,7 +103,7 @@
 
   </link>
 
-  <joint type="continuous" name="LEFT_wheel_hinge">
+  <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.125 0" rpy="0 0 0"/>
     <child link="LEFT_wheel"/>
     <parent link="chassis"/>
@@ -145,7 +145,7 @@
 
   </link>
 
-  <joint type="continuous" name="RIGHT_wheel_hinge">
+  <joint type="continuous" name="right_wheel_hinge">
     <origin xyz="0 -0.125 0" rpy="0 0 0"/>
     <child link="RIGHT_wheel"/>
     <parent link="chassis"/>
