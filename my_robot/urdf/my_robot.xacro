@@ -87,10 +87,10 @@
       />
     </inertial>
 
-    <collision name='collision'>
+    <collision name='LEFT_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 0.7505 0.7505"/>  
       <geometry>
-        <box size=".4 .2 .1"/>
+        <cylinder length="0.05" radius="0.1"/>
       </geometry>
     </collision>
 
@@ -129,10 +129,10 @@
       />
     </inertial>
 
-    <collision name='collision'>
+    <collision name='RIGHT_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 2.3562 2.3562"/> 
       <geometry>
-        <box size=".4 .2 .1"/>
+        <cylinder length="0.05" radius="0.1"/>
       </geometry>
     </collision>
 
